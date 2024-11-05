@@ -57,14 +57,13 @@ script.on_event(defines.events.on_chunk_generated, function(e)
     local enemy = get_random_enemy(e)
 
 	while true do
-		local position = e.surface.find_non_colliding_position_in_box("biter-spawner", area, 0.75, false)
+		local position = e.surface.find_non_colliding_position_in_box("biter-spawner", area, 1, false)
 		if not position then
 			break
 		end
-		e.surface.create_entity({name=enemy, position=position, force=game.forces.enemy})
-		local distance_from_spawn = math.sqrt(position.x * position.x + position.y * position.y)
+		local distance_from_spawn = math.sqrt(position.x^2 + position.y^2)
 		if distance_from_spawn > 250 then
-			break
+			e.surface.create_entity({name=enemy, position=position, force=game.forces.enemy})
 		end
 	end
 
