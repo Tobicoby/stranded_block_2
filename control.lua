@@ -22,7 +22,6 @@ end)
 
 script.on_init(function()
 	remote.call("freeplay", "set_disable_crashsite", true)
-	remote.call("freeplay", "set_skip_intro", true)
 end)
 
 script.on_event(defines.events.on_chunk_generated, function(e)

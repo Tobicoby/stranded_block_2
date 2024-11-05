@@ -1,0 +1,12 @@
+Modified StrandedBlock from 1.1, meant to be used with other mods. 
+Use chemical plant to extract resources from water. 
+Rush steel for more chemical plants. 
+You still need military to clear nearby island to expand.
+Incompatible with mods that adds some kind of new ore patches, but you can just add that in the recipe.lua yourself.
+Space Age planets are not affected
+Some weird enemy bases :D
+BEWARE: I'M NOT A PROFESSIONAL PROGRAMMER/SCRIPTER
+
+Improvements are welcome!
+
+Original made by Vectorinox
