@@ -3,6 +3,7 @@ Version: 0.3.5
 Date: 06. 11. 2024
   Changes:
     - oil recipe now enabled when oil processing is researched
+    - uranium recipe now enabled when uranium mining is researched
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.4

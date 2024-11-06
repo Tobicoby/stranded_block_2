@@ -1,12 +1,3 @@
--- Find and remove the pumpjack unlock from oil-processing
-for i = 1, #data.raw.technology["oil-processing"].effects do
-    local effect = data.raw.technology["oil-processing"].effects[i]
-    if effect.type == "unlock-recipe" and effect.recipe == "pumpjack" then
-        table.remove(data.raw.technology["oil-processing"].effects, i)
-        break
-    end
-end
-
 -- Only affect Nauvis
 if data.raw["planet"]["nauvis"] then
     for k,v in pairs(data.raw.tree) do
@@ -48,3 +39,70 @@ data.raw["map-gen-presets"]["default"]["strandedblock"] = {
         }
     }
 }
+
+data:extend({
+	{
+		type = "technology",
+		name = "oil-processing",
+		icon = "__base__/graphics/technology/oil-processing.png",
+		icon_size = 256,
+		prerequisites = {"oil-gathering"},
+		effects =
+		{
+			{
+			type = "unlock-recipe",
+			recipe = "oil-refinery"
+			},
+			{
+			type = "unlock-recipe",
+			recipe = "chemical-plant"
+			},
+			{
+			type = "unlock-recipe",
+			recipe = "basic-oil-processing"
+			},
+			{
+			type = "unlock-recipe",
+			recipe = "solid-fuel-from-petroleum-gas"
+			},
+			{
+			type = "unlock-recipe",
+			recipe = "oil-extraction"
+			}
+		},
+		research_trigger =
+		{
+			type = "craft-item",
+			item = "pumpjack"
+		}
+	},
+    {
+        type = "technology",
+        name = "uranium-mining",
+        icon = "__base__/graphics/technology/uranium-mining.png",
+        icon_size = 256,
+        effects =
+        {
+            {
+            type = "mining-with-fluid",
+            modifier = true
+            },
+            {
+            type = "unlock-recipe",
+            recipe = "uranium-extraction"
+            }
+        },
+        prerequisites = {"chemical-science-pack", "concrete"},
+        unit =
+        {
+          count = 100,
+          ingredients =
+          {
+            {"automation-science-pack", 1},
+            {"logistic-science-pack", 1},
+            {"chemical-science-pack", 1}
+          },
+          time = 30
+        }
+    },
+})
