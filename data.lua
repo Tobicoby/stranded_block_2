@@ -35,6 +35,10 @@ data:extend({
 			{
 			type = "unlock-recipe",
 			recipe = "solid-fuel-from-petroleum-gas"
+			},
+			{
+			type = "unlock-recipe",
+			recipe = "oil-extraction"
 			}
 		},
 		research_trigger =
