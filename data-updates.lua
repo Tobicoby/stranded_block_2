@@ -31,14 +31,27 @@ data:extend(
     }
 )
 
-data.raw["map-gen-presets"]["default"]["strandedblock"] = {
-    order = "a",
-    basic_settings = {
-        property_expression_names = {
-            elevation = "StrandedBlock_ele"
+data:extend(
+    {
+        {
+            type = "map-gen-presets",
+            name = "default",
+            default = {
+                order = "a",
+                default = true,
+            },
+            ["strandedblock"] =
+            {
+                order = "b",
+                basic_settings = {
+                    property_expression_names = {
+                        elevation = "StrandedBlock_ele"
+                    }
+                }
+            },
         }
     }
-}
+)
 
 data:extend({
 	{
@@ -90,7 +103,7 @@ data:extend({
             {
             type = "unlock-recipe",
             recipe = "uranium-extraction"
-            }
+            },
         },
         prerequisites = {"chemical-science-pack", "concrete"},
         unit =
@@ -103,6 +116,29 @@ data:extend({
             {"chemical-science-pack", 1}
           },
           time = 30
+        }
+    },
+    {
+        type = "technology",
+        name = "uranium-processing",
+        icon = "__base__/graphics/technology/uranium-processing.png",
+        icon_size = 256,
+        effects =
+        {
+            {
+            type = "unlock-recipe",
+            recipe = "centrifuge"
+            },
+            {
+            type = "unlock-recipe",
+            recipe = "uranium-processing"
+            },
+        },
+        prerequisites = {"uranium-mining"},
+        research_trigger =
+        {
+          type = "craft-item",
+          item = "uranium-ore"
         }
     },
 })

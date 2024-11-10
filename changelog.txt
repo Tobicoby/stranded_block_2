@@ -1,4 +1,10 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.3.6
+Date: 10. 11. 2024
+  Changes:
+    - uranium processing now requires uranium ore to be crafted in a chemical plant for it to be researched
+
+---------------------------------------------------------------------------------------------------
 Version: 0.3.5
 Date: 06. 11. 2024
   Changes:
