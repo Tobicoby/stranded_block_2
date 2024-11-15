@@ -25,9 +25,9 @@ script.on_init(function()
 end)
 
 script.on_event(defines.events.on_chunk_generated, function(e)
-	if e.surface.planet.name ~= "nauvis" then
-		return
-	end
+	if e.surface.name ~= "nauvis" then
+        return
+    end
 	local minx = e.area.left_top.x
 	local maxx = e.area.right_bottom.x
 	local miny = e.area.left_top.y
