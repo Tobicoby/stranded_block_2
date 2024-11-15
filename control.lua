@@ -25,7 +25,7 @@ script.on_init(function()
 end)
 
 script.on_event(defines.events.on_chunk_generated, function(e)
-	if e.surface.planet ~= "nauvis" then
+	if e.surface.planet.name ~= "nauvis" then
 		return
 	end
 	local minx = e.area.left_top.x

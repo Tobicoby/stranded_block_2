@@ -7,6 +7,9 @@ Date: 15. 11. 2024
     - scrap spawning on fulgora
     - vault ruins spawn on fulgora
     - vulcanus rocks spawn on vulcanus
+  Bugfixes:
+    - fixed no biter nests spawning on nauvis
+    - fixed no starter chest spawning on nauvis
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.7
