@@ -1,8 +1,12 @@
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.8
-Date: 14. 11. 2024
+Date: 15. 11. 2024
   Changes:
     - locale
+    - rocks spawning on other planets but nauvis
+    - scrap spawning on fulgora
+    - vault ruins spawn on fulgora
+    - vulcanus rocks spawn on vulcanus
 
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.7
