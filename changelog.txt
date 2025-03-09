@@ -1,4 +1,21 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.0
+Date: 09. 03. 2025
+  Info:
+    - small overhaul (CREDITS TO: AlStinson)
+  Changes:
+    - multiple scripts simplifications
+    - landfill technology removed, landfill is already enabled at start (this was not changed)
+    - electric-mining-drill technology removed
+    - oil-gathering technology enables oil-extraction recipe instead of pumpjack recipe
+    - oil-processing technology reasearched when crafting crude oil instead of a pumpjack
+    - with space age mod: space-platform-thruster technology enables burner-mining-drill, electric-mining-drill and pumpjack recipes
+    - the mod is playable in any map generation settings, but most of the options will not affect the generated map
+  Bugfixes:
+    - fixed game crashing while starting a new game without the freeplay scenario
+    - fixed game crashing while starting a new game without Stranded Block map generation settings
+
+---------------------------------------------------------------------------------------------------
 Version: 0.3.10
 Date: 08. 12. 2024
   Changes:
