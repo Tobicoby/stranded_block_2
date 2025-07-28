@@ -29,7 +29,8 @@ data:extend({
         icon = "__stranded_block_2__/graphics/icons/brick-smelt.png",
         icon_size = 64,
         category = "chemistry",
-        subgroup = "fluid-recipes"
+        subgroup = "fluid-recipes",
+        allow_productivity = true
     },
     {
         type = "recipe",
@@ -93,7 +94,8 @@ data:extend({
         icon = "__stranded_block_2__/graphics/icons/iron-smelt.png",
         icon_size = 64,
         category = "chemistry",
-        subgroup = "fluid-recipes"
+        subgroup = "fluid-recipes",
+        allow_productivity = true
     },
     {
         type = "recipe",
@@ -125,7 +127,8 @@ data:extend({
         icon = "__stranded_block_2__/graphics/icons/copper-smelt.png",
         icon_size = 64,
         category = "chemistry",
-        subgroup = "fluid-recipes"
+        subgroup = "fluid-recipes",
+        allow_productivity = true
     },
     {
         type = "recipe",
@@ -144,6 +147,7 @@ data:extend({
         category = "chemistry",
         subgroup = "fluid-recipes",
         order = "a[oil-processing]-a[basic-oil-processing]",
+        allow_productivity = true        
     },
     {
         type = "recipe",
@@ -161,6 +165,7 @@ data:extend({
         icon_size = 64,
         category = "chemistry",
         subgroup = "fluid-recipes",
+        allow_productivity = true
     },
 })
 
