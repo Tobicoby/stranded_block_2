@@ -39,7 +39,6 @@ data.raw.technology["uranium-mining"].effects = {
 }
 data.raw.technology["uranium-processing"].research_trigger = { type = "craft-item", item = "uranium-ore" }
 
-remove_technology("landfill")
 remove_technology("electric-mining-drill")
 
 if mods["space-age"] then
