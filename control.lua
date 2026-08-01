@@ -20,7 +20,7 @@ end)
 script.on_event(defines.events.on_chunk_generated, function(e)
 	if e.surface.name ~= "nauvis" then return end
 	if e.position.x ~= 0 or e.position.y ~= 0 then return end
-	local chest = e.surface.create_entity({ name = "iron-chest", position = { 0, 0 }, force = game.player.force })
+	local chest = e.surface.create_entity({ name = "iron-chest", position = { 0, 0 }, force = game.forces.player })
 	if chest == nil then return end
 	chest.insert({ name = "landfill", count = 800 })
 	chest.insert({ name = "offshore-pump", count = 1 })

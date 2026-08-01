@@ -12,7 +12,7 @@ data:extend({
         },
         icon = "__base__/graphics/icons/stone.png",
         icon_size = 64,
-        category = "chemistry",
+        categories = { "chemistry" },
         subgroup = "fluid-recipes",
     },
     {
@@ -28,7 +28,7 @@ data:extend({
         },
         icon = "__stranded_block_2__/graphics/icons/brick-smelt.png",
         icon_size = 64,
-        category = "chemistry",
+        categories = { "chemistry" },
         subgroup = "fluid-recipes",
         allow_productivity = true
     },
@@ -45,7 +45,7 @@ data:extend({
         },
         icon = "__base__/graphics/icons/wood.png",
         icon_size = 64,
-        category = "chemistry",
+        categories = { "chemistry" },
         subgroup = "fluid-recipes"
     },
     {
@@ -61,7 +61,7 @@ data:extend({
         },
         icon = "__base__/graphics/icons/coal.png",
         icon_size = 64,
-        category = "chemistry",
+        categories = { "chemistry" },
         subgroup = "fluid-recipes",
     },
     {
@@ -77,7 +77,7 @@ data:extend({
         },
         icon = "__base__/graphics/icons/iron-ore.png",
         icon_size = 64,
-        category = "chemistry",
+        categories = { "chemistry" },
         subgroup = "fluid-recipes",
     },
     {
@@ -93,7 +93,7 @@ data:extend({
         },
         icon = "__stranded_block_2__/graphics/icons/iron-smelt.png",
         icon_size = 64,
-        category = "chemistry",
+        categories = { "chemistry" },
         subgroup = "fluid-recipes",
         allow_productivity = true
     },
@@ -110,7 +110,7 @@ data:extend({
         },
         icon = "__base__/graphics/icons/copper-ore.png",
         icon_size = 64,
-        category = "chemistry",
+        categories = { "chemistry" },
         subgroup = "fluid-recipes",
     },
     {
@@ -126,7 +126,7 @@ data:extend({
         },
         icon = "__stranded_block_2__/graphics/icons/copper-smelt.png",
         icon_size = 64,
-        category = "chemistry",
+        categories = { "chemistry" },
         subgroup = "fluid-recipes",
         allow_productivity = true
     },
@@ -144,7 +144,7 @@ data:extend({
         },
         icon = "__base__/graphics/icons/fluid/basic-oil-processing.png",
         icon_size = 64,
-        category = "chemistry",
+        categories = { "chemistry" },
         subgroup = "fluid-recipes",
         order = "a[oil-processing]-a[basic-oil-processing]",
         allow_productivity = true
@@ -163,7 +163,7 @@ data:extend({
         },
         icon = "__base__/graphics/icons/uranium-ore.png",
         icon_size = 64,
-        category = "chemistry",
+        categories = { "chemistry" },
         subgroup = "fluid-recipes",
         allow_productivity = true
     },
