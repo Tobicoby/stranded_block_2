@@ -32,3 +32,21 @@ script.on_event(defines.events.on_chunk_generated, function(e)
 	chest.insert({ name = "boiler", count = 1 })
 	chest.insert({ name = "steam-engine", count = 2 })
 end)
+
+-- Space Age: a technology researched by mining a resource patch has a hidden
+-- twin that is researched by extracting the resource. Either one completes
+-- the other, so the real technology is researched by mining or extracting.
+local twin_suffix = "-by-extraction"
+script.on_event(defines.events.on_research_finished, function(e)
+	local technologies = e.research.force.technologies
+	local name = e.research.name
+	local other
+	if name:sub(-#twin_suffix) == twin_suffix then
+		other = technologies[name:sub(1, -#twin_suffix - 1)]
+	else
+		other = technologies[name .. twin_suffix]
+	end
+	if other and not other.researched then
+		other.researched = true
+	end
+end)
