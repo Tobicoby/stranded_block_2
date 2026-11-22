@@ -1,4 +1,32 @@
 ---------------------------------------------------------------------------------------------------
+Version: NEXT
+  Features:
+    - Space Age: extraction recipes for every planet. Stranded Block only covered Nauvis, so a
+      planet without ore patches (resources switched off in the map generator, or a scenario
+      that places none) had no renewable source of its own resources. At load time each
+      planet now gets a recipe per resource that generates there, made from the fluid an
+      offshore pump yields there (lava, heavy oil, ammoniacal solution, water). This also
+      covers planets and Nauvis ores added by other mods.
+    - The new recipes craft in chemical plants and cryogenic plants, unlock with the planet's
+      discovery technology and share the mining productivity research.
+    - Technologies researched by mining a resource patch can also be researched by extracting
+      that resource. Calcite processing needs a calcite patch to be mined, so without this a
+      Vulcanus without patches is a dead end even with the new recipes. Mining still works as
+      before. A technology can only have one trigger, so a hidden twin technology carries the
+      extraction trigger and completing either one completes the other. Triggers that mine
+      rocks, ruins or plants are left alone, as those still generate.
+    - Advanced Extraction technologies, one per planet. Advanced Water Smelting
+      lets Nauvis skip the furnace, but the other planets had no equivalent mid-game step.
+      Where a planet's resource is smelted or recycled on its own (stone on Gleba, scrap on
+      Fulgora, and whatever other mods add), a recipe now makes the products of that step
+      directly from the planet's fluid. Each technology needs Advanced Water Smelting, the
+      planet's discovery, and space science plus the planet's own science pack. The recipes
+      share the water smelting productivity research.
+  Changes:
+    - Space Age: every extraction and water smelting recipe only works on the planet whose
+      resource it makes, so Nauvis ores can no longer be made from water on Gleba.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.5.1
 Date: 29. 07. 2026
   Bugfixes:
